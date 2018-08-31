@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "OrderQueue";
+}
+
+<h2>OrderQueue</h2>
+
+<table>
+    @foreach (var cocktail in Model)
+    {
+        <tr>
+            <td>@cocktail.Name</td>
+        </tr>
+    }
+</table>
+<input id="btnOrder" type="button" value="Complete Order" />
+
